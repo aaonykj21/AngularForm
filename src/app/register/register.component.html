@@ -1,0 +1,108 @@
+<form class="register-form" [formGroup]="registerForm">
+    <div class="title">Register</div>
+
+    <div class="form-columns">
+        <div class="form-left">
+            <div class="form-group floating-label">
+                <div class="select-group">
+                    <select formControlName="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                     <label>Gender</label>
+                     <div *ngIf="registerForm.get('gender')?.invalid && registerForm.get('gender')?.touched"
+                    class="check">
+                </div>
+                </div>
+               
+            </div>
+
+            <div class="form-group floating-label">
+                <input formControlName="firstname" type="text" placeholder=" " />
+                <label>Firstname</label>
+                <div *ngIf="registerForm.get('firstname')?.invalid && registerForm.get('firstname')?.touched"
+                    class="check">
+                    *Please enter your firstname*
+                </div>
+            </div>
+
+            <div class="form-group floating-label">
+                <input formControlName="lastname" type="text" placeholder=" " />
+                <label>Lastname</label>
+                <div *ngIf="registerForm.get('lastname')?.invalid && registerForm.get('lastname')?.touched"
+                    class="check">
+                    *Please enter your lastname*
+                </div>
+            </div>
+
+            <div class="form-group floating-label">
+                <input formControlName="nickname" type="text" placeholder=" " />
+                <label>Nickname</label>
+                <div *ngIf="registerForm.get('nickname')?.invalid && registerForm.get('nickname')?.touched"
+                    class="check">
+                    *Please enter your nickname*
+                </div>
+            </div>
+
+            <div class="form-group floating-label">
+                <input formControlName="phone" type="tel" placeholder=" " />
+                <label>Phone</label>
+                <div *ngIf="registerForm.get('phone')?.invalid && registerForm.get('phone')?.touched"
+                    class="check">
+                    *Please enter your phone*
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-right">
+            <div class="form-group floating-label">
+                <input formControlName="email" type="email" placeholder=" " />
+                <label>Email</label>
+                <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched" class="check">
+                    *Please enter your email*
+                </div>
+            </div>
+
+            <div class="form-group floating-label">
+                <input formControlName="citizenID" type="text" placeholder=" " />
+                <label>citizenID</label>
+                <div *ngIf="registerForm.get('citizenID')?.invalid && registerForm.get('citizenID')?.touched"
+                    class="check">
+                    *Please enter your citizenID*
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="select-group">
+                    <input type="date" formControlName="birthday" min="1990-01-01" max="2025-05-06" placeholder=" ">
+                </div>
+                <div *ngIf="registerForm.get('birthday')?.invalid && registerForm.get('birthday')?.touched"
+                    class="check">
+                    *Please select your birthday*
+                </div>
+            </div>
+            <div class="form-group floating-label">
+                <input formControlName="password" type="password" placeholder=" "/>
+                <label>Password</label>
+                <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched"
+                    class="check">
+                    *Please enter your password*
+                </div>
+            </div>
+
+            <div class="form-group floating-label">
+                <input formControlName="confirmpassword" type="password" placeholder=" " />
+                <label>Confirm Password</label>
+                <div *ngIf="registerForm.get('confirmpassword')?.invalid && registerForm.get('confirmpassword')?.touched"
+                    class="check">
+                    *Please confirm password*
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group full-width button-group">
+        <button type="button" (click)="Back()" class="btn-back">Back</button>
+        <button type="submit" class="btn-signup" (click)="onSubmit()">Register</button>
+    </div>
+</form>

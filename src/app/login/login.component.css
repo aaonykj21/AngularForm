@@ -1,0 +1,80 @@
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+  
+  .login-container {
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 550px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #6ec6da;
+  }
+  
+  .form {
+   margin-bottom: 15px;
+
+  }
+  .password{
+    color: white;
+    margin-top: 50px;
+  }
+  .email{
+    color: white;
+    margin-top: 10px;
+  }
+
+  .input-box-email {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaaaaa99;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .input-box-password {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaaaaa99;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .submit-btn {
+    text-align: center;
+  }
+  
+  .submit-btn button {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #aaaaaa99;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: #7a689f;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .submit-btn button:hover {
+    background-color: #7a689fc2;
+  }
+  
+  .register {
+    color: blue;
+    font-size: 14px;
+    text-align: center;
+  }
