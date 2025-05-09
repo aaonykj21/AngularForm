@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div *ngIf="catBreeds.length > 0" class="body">
+    <div class="header">
+        Cat Breeds 🐱
+    </div>
+    <div *ngFor="let breed of catBreeds" class="cat">
+        <div class="image">
+            <img *ngIf="breed.image" [src]="breed.image.url" alt="{{ breed.name }}" width="200">
+        </div>
+        <p class="name">{{ breed.name }}</p>
+        <div class="description">
+            {{ breed.description }}</div>
+    </div>
+</div>
